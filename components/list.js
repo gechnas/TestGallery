@@ -42,7 +42,8 @@ const styles = StyleSheet.create({
   container: {
     flexDirection: 'row',
     flexWrap: 'wrap',
-    justifyContent: 'space-around'
+    justifyContent: 'space-around',
+    backgroundColor: '#000'
   },
   item: {
     width: 150,
