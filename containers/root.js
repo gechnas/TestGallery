@@ -34,6 +34,7 @@ export default class Root extends Component {
 
   retrieveImages() {
     return this.api.getAll()
+      .then(images => Promise.resolve(images.map((item, id) => ({ id, ...item }))))
       .then(images => this.setState({ mode: 'gallery', images }))
       .catch(() => this.setState({ mode: 'error' }));
   }

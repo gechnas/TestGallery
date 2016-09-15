@@ -90,7 +90,7 @@ class Slider extends Component {
         ]}
         {...this._panResponder.panHandlers}
       >
-        {items.map(item => <Detail key={item.title} item={item} />)}
+        {items.map(item => <Detail key={item.id} item={item} />)}
       </Animated.View>
     );
   }
